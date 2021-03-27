@@ -1,0 +1,13 @@
+Chế độ điều khiển theo nhiệt độ: Trong chế độ này, người vận hành phải cài đặt các thông số ngưỡng nhiệt độ gồm Trun, Tstop, Thigh, Tnormal, bộ điều khiển VASS-AC1000 sẽ thu thập tín hiệu nhiệt độ từ các cảm biến nhiệt và căn cứ theo các ngưỡng nhiệt độ này để làm việc. Có 3 trạng thái tác động bao gồm:
+
+Trạng thái 1 (chế độ tiết kiệm năng lượng): Nếu nhiệt độ ở thấp dưới mức Tstop (ví dụ =20°C) bộ điều khiển sẽ điều khiển chỉ chạy quạt thông gió và 2 điều hòa nghỉ.
+Trạng thái 2 (chế độ điều khiển thông thường): Nếu nhiệt độ trên mức Trun (ví dụ =25°C) bộ điều khiển VASS-AC1000 sẽ cho phép 2 điều hòa chạy luân phiên (1 điều hòa chạy, 1 điều hòa nghỉ) và cứ sau một khoảng thời gian (được cài đặt bởi người vận hành) thì hoán đổi lại, quạt thông gió nghỉ.
+Trạng thái 3 (chế độ điều khiển khẩn cấp): Nếu nhiệt độ trên mức Thigh (ví dụ =45°C), bộ điều khiển VASS-AC1000 sẽ cho phép cả 2 điều hòa chạy đồng thời. Sau khi nhiệt độ giảm xuống tới mức Tnormal (ví dụ =30°C) bộ điều khiển chuyển sang trạng thái 2 là chế độ điều khiển thông thường.
+
+
+
+Chế độ điều khiển theo thời gian: Trong chế độ này, người vận hành phải cài đặt các thông số thời gian là: Crun, Cstop, Thigh, Tnormal, bộ điều khiển VASS-AC1000 sẽ đọc thời gian hiện thời từ đồng hồ thời gian thực (Real Time Clock) và căn cứ theo các ngưỡng thời gian này để làm việc. Chế độ này gồm 3 trạng thái tác động:
+
+Trạng thái 1 (chế độ tiết kiệm năng lượng): Nếu thời gian hiện tại là sau Cstop (ví dụ =0h) và trước Crun (ví dụ =4h), bộ điều khiển VASS-AC1000 sẽ chỉ chạy quạt thông gió và 2 điều hòa nghỉ.
+Trạng thái 2 (chế độ điều khiển thông thường): Nếu thời gian hiện tại là sau Crun (ví dụ =4h) và trước Cstop (ví dụ =24h), bộ điều khiển VASS-AC1000 sẽ cho phép 2 điều hòa chạy luân phiên (1 điều hòa chạy, 1 điều hòa nghỉ) và cứ sau một khoảng thời gian(được cài đặt bởi người vận hành) thì hoán đổi lại, quạt thông gió nghỉ.
+Trạng thái 3 (chế độ điều khiển khẩn cấp): Nếu trong quá trình chạy mà nhiệt độ lên trên mức Thigh, bộ điều khiển VASS-AC1000 sẽ cho phép cả 2 điều hòa chạy đồng thời. Sau khi nhiệt độ giảm xuống tới mức Tnormal bộ điều khiển chuyển sang trạng thái 2 là chế độ điều khiển thông thường.
